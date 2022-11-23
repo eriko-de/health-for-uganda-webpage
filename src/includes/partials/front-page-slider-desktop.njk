@@ -1,0 +1,39 @@
+<div id="WelcomeCarouselDesktop" class="img-fit-container carousel slide" data-bs-ride="carousel">
+  <div class="bg-dark p-5 overlay">
+    <div class="position-relative top-50 start-50 translate-middle text-bg-dark">
+      <h1 class="display-5 fw-bold">Herzlich Willkommen</h1>
+      <p class="fs-4 pt-2">
+        auf unserer Webseite
+        <br />
+        Health for Uganda / Africa e.V.
+      </p>
+    </div>
+  </div>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#WelcomeCarouselDesktop"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button type="button" data-bs-target="#WelcomeCarouselDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#WelcomeCarouselDesktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#WelcomeCarouselDesktop" data-bs-slide-to="3" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">{% image "./src/assets/images/slider/slider1.jpg", "Health for Uganda" %}</div>
+    <div class="carousel-item">{% image "./src/assets/images/slider/slider2.jpg", "Health for Uganda" %}</div>
+    <div class="carousel-item">{% image "./src/assets/images/slider/slider3.jpg", "Health for Uganda" %}</div>
+    <div class="carousel-item">{% image "./src/assets/images/slider/slider4.jpg", "Health for Uganda" %}</div>
+  </div>
+  <a class="carousel-control-prev" href="#WelcomeCarouselDesktop" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#WelcomeCarouselDesktop" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>

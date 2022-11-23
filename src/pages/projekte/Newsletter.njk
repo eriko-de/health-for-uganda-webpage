@@ -1,0 +1,28 @@
+---
+layout: base
+eleventyNavigation:
+  key: Newsletter
+  parent: Projekte
+  order: 2
+---
+
+<div class="p-2 container-lg text-center">
+  <h1>Newsletter zum Download</h1>
+</div>
+
+<div class="container-lg">
+  {%- for newsletter in collections.newsletter -%}
+  <div class="container-lg">
+    <div class="row my-4 p-4 text-bg-light img-fit-container">
+      <div class="p-2 col-sm-4">{% image newsletter.data.image, newsletter.data.imageAlt %}</div>
+      <div class="col-sm-8">
+        <h2 class="mb-4">{{ newsletter.data.title }}</h2>
+        {{ newsletter.templateContent | safe }}
+        <p>
+          <a href="/assets/downloads/Newsletter_2021.pdf">Hier der Download</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
